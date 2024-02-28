@@ -1,2 +1,2 @@
-# blog.rubberocket.com
-The Rubberocket blog. Duh.
+# rubberocket.com
+The new Rubberocket site. Duh.

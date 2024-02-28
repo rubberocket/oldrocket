@@ -17,42 +17,38 @@
 
 <body>
 
-<div class="header">
-    <header class="center">
+    <table>
+        <tbody>
+        <tr>
         <img src="{{site.baseurl}}/assets/images/header/rubberocket.png" height="100%" alt="Rubberocket">
-    </header>
-</div>
+        </tr>
+        <tr>
+        <td>
+            <h1>recent posts</h1>
+            <p>
+                {% for post in site.posts %}
+                <li><a href="{{post.url}}">{{post.title}}</a></li>
+                {% endfor %}
+            </p>
+        </td>
+        <td>
+        <p>links: <a href="/">[home]</a>  <a href="/ramble/">[ramble]</a>  <a href="/art/">[art]</a>  <a href="/anim/">[animations]</a>  <a href="/downloads/">[downloads]</a>  <a href="/about/">[about]</a></p>
 
-<div class="content">
-<main class="mainy">
-    <aside class="leftside">
-    <h1>recent posts</h1>
-    <p>
-        {% for post in site.posts %}
-        <li><a href="{{post.url}}">{{post.title}}</a></li>
-        {% endfor %}
-    </p>
-    </aside>
-
-    <section class="realcontent">
-        <!--links-->
-        <div class="links">
-            <nav>
-                <a href="/">[home]</a>  <a href="/ramble/">[ramble]</a>  <a href="/art/">[art]</a>  <a href="/anim/">[animations]</a>  <a href="/downloads/">[downloads]</a>  <a href="/about/">[about]</a>
-            </nav>
-        </div>    
-        <div class="iswear">        
         <!--add something here, dr. jekyll!-->
         {{content}}
-        </div>
-    </section>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        </td>
+        <td>
+            <img src="{{site.baseurl}}/assets/images/cc/ccbysa.gif" width="88" height="31" alt="CC BY-SA">
+            <br>
+            <small>(unless stated otherwise)</small>
+        </td>
+        </tr>
+        </tbody>
+    </table>
 
-    <footer>
-    <img src="{{site.baseurl}}/assets/images/cc/ccbysa.gif" width="88" height="31" alt="CC BY-SA">
-    <br>
-    <small>(unless stated otherwise)</small>
-    </footer>
-</main>
-</div>
 </body>
 </html>
