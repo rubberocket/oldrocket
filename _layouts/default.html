@@ -3,86 +3,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>{{post.title}} :: Rubberocket</title>
-<meta property="og:title" content="{{post.title}} :: Rubberocket">
-<meta property="og:description" content="{{post.description}}">    
-<meta name="description" content="{{post.description}}">
+<title>{{page.title}} :: Rubberocket</title>
+<meta property="og:title" content="{{page.title}} :: Rubberocket">
+<meta property="og:description" content="{{page.description}}">    
+<meta name="description" content="{{page.description}}">
 <meta name="keywords" content="rubberocket, art, animation, flash, videos, images, cartoons, pictures, games, macromedia, game maker, whatever, you, me, whoever i please, stop, what, no, youtube, poop, i'm running out of words">
-<meta name="twitter:title" content="{{post.title}} :: Rubberocket">
-<meta name="twitter:description" content="{{post.description}}">
+<meta name="twitter:title" content="{{page.title}} :: Rubberocket">
+<meta name="twitter:description" content="{{page.description}}">
+
 <!-- stylesheet -->
-<!-- this is across all pages so we can just make it here-->
-<style type="text/css">
-    html, body {
-        background-color: #FFC72C;
-        color: #000000;
-        font-family: Arimo, Arial, Helvetica, sans-serif;
-        margin: 0 auto;
-    }
-    .center {
-        text-align: center;
-    }
-
-    .header {
-        width: 468px;
-        height: 60px;
-        background-color: #000000;
-        color: #FFFFFF;
-        border: 1px solid;
-    }
-
-    .links {
-        width: 468px;
-        background-color: #FFFFFF;
-        color: #000000;
-        border: 1px solid;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    .content {
-        width: 468px;
-    }
-
-    
-
-</style>
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/styles/main.css">
 </head>
 
 <body>
+
 <div class="header">
-<img src="{{site.baseurl}}/assets/images/header/rubberocket.gif" width="468" height="60" alt="Rubberocket">
-</div>
-<div class="links center">
-<a href="/">[home]</a>  <a href="/ramble/">[ramble]</a>  <a href="/art/">[art]</a>  <a href="/anim/">[animations]</a>  <a href="/downloads/">[downloads]</a>  <a href="/about/">[about]</a>
+    <header>
+        <img src="{{site.baseurl}}/assets/images/header/rubberocket.gif" width="468" height="60" alt="Rubberocket" class="center">
+    </header>
+<div class="links">
+    <nav>
+        <a href="/">[home]</a>  <a href="/ramble/">[ramble]</a>  <a href="/art/">[art]</a>  <a href="/anim/">[animations]</a>  <a href="/downloads/">[downloads]</a>  <a href="/about/">[about]</a>
+    </nav>
+</div>    
 </div>
 
 <div class="content">
-    <table>
-    <tbody>
-        <tr>
-        <td class="bro" width="187.2">
-        <h1>recent posts</h1>
-        <p>
+<main class="mainy">
+    <aside class="leftside">
+    <h1>recent posts</h1>
+    <p>
         {% for post in site.posts %}
-        <li></li>
+        <li><a href="{{post.url}}">{{post.title}}</a></li>
         {% endfor %}
-        </p>
-        </td>
-        <td class="bro" width="280.8">
+    </p>
+    </aside>
+
+    <section class="realcontent">
         <!--add something here, dr. jekyll!-->
-        {{content}}    
-        </td>
-        </tr>
-        
-        <tr>
-        <td class="bro center" width="100%">
-        <img src="{{site.baseurl}}/assets/images/cc/ccbysa.gif" width="88" height="31" alt="CC BY-SA">
-        <br>
-        <small>(unless stated otherwise)</small>
-        </td>
-        </tr>
-    </tbody>
-    </table>
+        {{content}}
+    </section>
+
+    <footer>
+    <img src="{{site.baseurl}}/assets/images/cc/ccbysa.gif" width="88" height="31" alt="CC BY-SA">
+    <br>
+    <small>(unless stated otherwise)</small>
+    </footer>
+</main>
 </div>
 </body>
 </html>
