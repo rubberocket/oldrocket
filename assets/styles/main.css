@@ -25,21 +25,21 @@ html, body {
 }
 
 .content {
-    display: block;
+    display: flex;
     width: 100%;
     height: 90%;
 }
 .leftside {
     width: 30%;
     height: 60%;
-    display: block;
+    display: flex;
     float: left;
 }
 .iswear {
     width: 70%;
-    height: 50%;
     background-color: #DC4405;
-    display: block;
+    display: flex;
+    flex: 1 1 auto;
     overflow-x: none;
     overflow-y: scroll;
 }
@@ -47,10 +47,10 @@ html, body {
     width: 100%;
     height: 20%;
     background-color: #418FDE;
-    display: block;
+    display: flex;
 }
 .mainy {
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
 }
