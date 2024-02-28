@@ -3,80 +3,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rubberocket</title>
-<meta property="og:title" content="Rubberocket">
+<title>{{page.title}} :: Rubberocket</title>
+<meta property="og:title" content="{{page.title}} :: Rubberocket">
 <meta property="og:description" content="{{page.description}}">    
 <meta name="description" content="{{page.description}}">
 <meta name="keywords" content="rubberocket, art, animation, flash, videos, images, cartoons, pictures, games, macromedia, game maker, whatever, you, me, whoever i please, stop, what, no, youtube, poop, i'm running out of words">
-<meta name="twitter:title" content="Rubberocket">
+<meta name="twitter:title" content="{{page.title}} :: Rubberocket">
 <meta name="twitter:description" content="{{page.description}}">
+
 <!-- stylesheet -->
-<!-- this is across all pages so we can just make it here-->
-<style type="text/css">
-    html, body {
-        background-color: #FFC72C;
-        color: #000000;
-        font-family: Arimo, Arial, Helvetica, sans-serif;
-        margin: 0 auto;
-    }
-    .center {
-        text-align: center;
-    }
-
-    .header {
-        width: 100%;
-        height: 60px;
-        background-color: #000000;
-        color: #FFFFFF;
-        border: 1px solid;
-    }
-
-    .links {
-        width: 100%;
-        background-color: #FFFFFF;
-        color: #000000;
-        border: 1px solid;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: bold;
-    }
-
-    .content {
-        width: 468px;
-        border: 1px solid black;
-    }
-
-    
-
-</style>
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/styles/main.css">
 </head>
 
 <body>
 
-<div class="header center">
-<header>
-<img src="{{site.baseurl}}/assets/images/header/rubberocket.gif" width="468" height="60" alt="Rubberocket">
-</header>
-</div>
+<div class="header">
+    <header>
+        <img src="{{site.baseurl}}/assets/images/header/rubberocket.gif" width="468" height="60" alt="Rubberocket" class="center">
+    </header>
 <div class="links">
-<nav>
-<a href="/">[home]</a>  <a href="/ramble/">[ramble]</a>  <a href="/art/">[art]</a>  <a href="/anim/">[animations]</a>  <a href="/downloads/">[downloads]</a>  <a href="/about/">[about]</a>
-</nav>
+    <nav>
+        <a href="/">[home]</a>  <a href="/ramble/">[ramble]</a>  <a href="/art/">[art]</a>  <a href="/anim/">[animations]</a>  <a href="/downloads/">[downloads]</a>  <a href="/about/">[about]</a>
+    </nav>
+</div>    
 </div>
 
 <div class="content">
-<main>
-    <aside>
+<main class="mainy">
+    <aside class="leftside">
     <h1>recent posts</h1>
     <p>
         {% for post in site.posts %}
-        <li></li>
+        <li><a href="{{post.url}}">{{post.title}}</a></li>
         {% endfor %}
     </p>
     </aside>
 
-    <section>
+    <section class="realcontent">
         <!--add something here, dr. jekyll!-->
-        {{content}}    
+        {{content}}
     </section>
 
     <footer>
