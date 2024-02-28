@@ -1,0 +1,75 @@
+---
+---
+<!-- stylesheet -->
+<!-- this is across all pages so we can just make it here-->
+<style type="text/css">
+    html, body {
+        background-color: #FFC72C;
+        color: #000000;
+        font-family: Arimo, Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .header {
+        width: 468px;
+        height: 60px;
+        background-color: #000000;
+        color: #FFFFFF;
+        border: 1px solid;
+    }
+
+    .links {
+        width: 468px;
+        background-color: #FFFFFF;
+        color: #000000;
+        border: 1px solid;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .content {
+        width: 468px;
+    }
+
+    
+
+</style>
+
+
+<div class="header">
+<img src="/assets/images/header/rubberocket.gif" width="468" height="60" alt="Rubberocket">
+</div>
+<div class="links center">
+<a href="/">[home]</a>  <a href="/ramble/">[ramble]</a>  <a href="/art/">[art]</a>  <a href="/anim/">[animations]</a>  <a href="/downloads/">[downloads]</a>  <a href="/about/">[about]</a>
+</div>
+
+<div class="content">
+    <table>
+    <tbody>
+        <tr>
+        <td class="bro" width="30%">
+        <h1>recent posts</h1>
+        <p>
+        {% for post in site.posts %}
+        <li></li>
+        {% endfor %}
+        </p>
+        </td>
+        <td class="bro" width="70%">
+        <!--add something here, dr. jekyll!-->
+        {{content}}    
+        </td>
+        </tr>
+        
+        <tr>
+        <td class="bro center" width="100%">
+        <img src="/assets/images/cc/ccbysa.gif" width="468" height="60" alt="CC BY-SA">
+        <br>
+        <small>(unless stated otherwise)</small>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
