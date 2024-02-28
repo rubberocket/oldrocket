@@ -30,13 +30,13 @@ html, body {
 }
 .leftside {
     width: 30%;
-    height: 30%;
+    height: 70%;
     display: inline-block;
     float: left;
 }
 .reallycontent {
     width: 70%;
-    height: 30%;
+    height: 70%;
     background-color: #DC4405;
     display: inline-block;
     overflow-x: none;
