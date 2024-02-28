@@ -1,5 +1,7 @@
 ---
 ---
+<head>
+<title>{{ post.title }}</title>
 <!-- stylesheet -->
 <!-- this is across all pages so we can just make it here-->
 <style type="text/css">
@@ -36,7 +38,7 @@
     
 
 </style>
-
+</head>
 
 <div class="header">
 <img src="/assets/images/header/rubberocket.gif" width="468" height="60" alt="Rubberocket">
@@ -49,7 +51,7 @@
     <table>
     <tbody>
         <tr>
-        <td class="bro" width="30%">
+        <td class="bro" width="187.2">
         <h1>recent posts</h1>
         <p>
         {% for post in site.posts %}
@@ -57,7 +59,7 @@
         {% endfor %}
         </p>
         </td>
-        <td class="bro" width="70%">
+        <td class="bro" width="280.8">
         <!--add something here, dr. jekyll!-->
         {{content}}    
         </td>
@@ -65,7 +67,7 @@
         
         <tr>
         <td class="bro center" width="100%">
-        <img src="/assets/images/cc/ccbysa.gif" width="468" height="60" alt="CC BY-SA">
+        <img src="/assets/images/cc/ccbysa.gif" width="8" height="60" alt="CC BY-SA">
         <br>
         <small>(unless stated otherwise)</small>
         </td>
