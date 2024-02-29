@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>{{page.title}} :: Rubberocket</title>
-<meta property="og:title" content="{{page.title}} :: Rubberocket">
+<title>{{page.title}} | ramble :: Rubberocket</title>
+<meta property="og:title" content="{{page.title}} | ramble :: Rubberocket">
 <meta property="og:description" content="{{page.description}}">    
 <meta name="description" content="{{page.description}}">
 <meta name="keywords" content="rubberocket, art, animation, flash, videos, images, cartoons, pictures, games, macromedia, game maker, whatever, you, me, whoever i please, stop, what, no, youtube, poop, i'm running out of words">
 <meta name="twitter:title" content="Rubberocket">
-<meta name="twitter:description" content="{{page.title}} :: {{page.description}}">
+<meta name="twitter:description" content="{{page.title}} | ramble :: Rubberocket">
 
 </head>
 
@@ -68,7 +68,12 @@
 
 		<td width="70%">
 		<!--cause i was jekyll jekyll hyde jekyll hyde hyde jekyll!-->
-		{{content}}
+        <h1>{{post.title}}</h1>
+        <p>
+        <small>originally posted on: {{ page.date | date: "%-d %B %Y" }}</small>
+        </p>
+		<br>
+        {{content}}
 		<!--end jekyll injection-->
 		</td>
 
