@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Ramble
+layout: post
+title: Animations
 nav_order: 1
-description: "The ramble section of Rubberocket, where I ramble about stuff in blog form!"
+description: "The animation section of Rubberocket, where most of the animations of the site reside."
 permalink: /anim/
 ---
 
