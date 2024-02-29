@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Animations
 nav_order: 1
 description: "The animation section of Rubberocket, where most of the animations of the site reside."
