@@ -1,0 +1,18 @@
+---
+layout: default
+title: Ramble
+nav_order: 1
+description: "The ramble section of Rubberocket, where I ramble about stuff in blog form!"
+permalink: /ramble/
+---
+
+# Ramble!
+### The part of the site where I blog about stuff.
+
+<ul>
+  {% for post in site.categories.ramble %}
+    {% if post.url %}
+        <li><a href="{{post.url}}">{{post.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
