@@ -9,4 +9,4 @@ permalink: /
 I present to you, the world's biggest image file. (Open in Netscape 4.04 for the best experience!!!1!)
 
 
-![Tux, the Linux mascot](/assets/images/joke/slowload.gif)
+![world's worst loading image](/assets/images/joke/slowload.gif)
