@@ -12,7 +12,7 @@ permalink: /ramble/
 <ul>
   {% for post in site.categories.ramble %}
     {% if post.url %}
-        <li><a href="{{post.url}}">{{post.title}}</a></li>
+        <li><a href="{{post.url}}">{{post.title}}</a> ({{ page.date | date: "%-d %B %Y" }})</li>
     {% endif %}
   {% endfor %}
 </ul>
