@@ -32,7 +32,7 @@ Oh yeah, this is obvious, no phishing or scamming. I'll usually ignore it or say
 <ul>
 <li>The latest version of your browser of choice</li>
 <li>The latest version of your operating system of choice</li>
-<li>A screen resolution of 1024x768 or more</li>
+<li>A screen resolution of 1366x768 or more</li>
 <li>16 Million color display</li>
 </ul>
 
@@ -40,6 +40,6 @@ Oh yeah, this is obvious, no phishing or scamming. I'll usually ignore it or say
 <ul>
 <li>Internet Explorer 5 or Netscape Navigator 4.04 (They have support for PNGs)</li>
 <li>Windows 9x or later, Mac OS 9 or later, any version of Linux you want to use that has access to the internet</li> 
-<li>A screen resolution of 800x600 or more</li>
+<li>A screen resolution of 1024x768 or more</li>
 <li>256 colors or more</li>
 </ul>
