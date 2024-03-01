@@ -21,6 +21,11 @@ One day, I felt bored and decided to make a website, which can be found at <a hr
 
 If you want to visit some of those older sites, visit <a href="/neocities/">www.rubberocket.com/neocities</a>.
 
+# How do I contact you?
+Via email. <a href="mailto:aleph@rubberocket.com">aleph@rubberocket.com</a> is the email address you want. However, it <em>does</em> forward to <a href="mailto:alephdiallo@proton.me">alephdiallo@proton.me</a>, since that requires cash to add aliases. I do not want to use GMail for Rubberocket, so you'll just have to deal with that.
+
+Oh yeah, this is obvious, no phishing or scamming. I'll usually ignore it or say something like "not interested".
+
 # Website requirements
 
 ## Recommended requirements
