@@ -12,7 +12,7 @@ permalink: /ramble/
 <ul>
   {% for post in site.categories.ramble %}
     {% if post.url %}
-        <li><a href="{{post.url}}">{{post.title}}</a> ({{ post.date | date: "%-d %B %Y" }}) <img src="{{post.thumbnail}}" width="32" alt="{{post.title}}"></li>
+        <li><a href="{{post.url}}">{{post.title}}</a> ({{ post.date | date: "%-d %B %Y" }}) <img src="{{post.thumbnail}}" width="32" alt="{{post.thumbnail-alt}}"></li>
     {% endif %}
   {% endfor %}
 </ul>

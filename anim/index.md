@@ -12,7 +12,7 @@ permalink: /anim/
 <ul>
   {% for post in site.categories.anim %}
     {% if post.url %}
-        <li><a href="{{post.url}}">{{post.title}}</a> ({{ post.date | date: "%-d %B %Y" }}) <img src="{{post.thumbnail}}" width="128" alt="{{post.title}}"></li>
+        <li><a href="{{post.url}}">{{post.title}}</a> ({{ post.date | date: "%-d %B %Y" }}) <img src="{{post.thumbnail}}" width="128" alt="{{post.thumbnail-alt}}"></li>
     {% endif %}
   {% endfor %}
 </ul>
