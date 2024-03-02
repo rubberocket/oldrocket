@@ -11,14 +11,18 @@ I present to you, the world's biggest image file. (Open in Netscape 4.04 for the
 
 ![world's worst loading image](/assets/images/joke/slowload.gif)
 
-<div class="clippy">
-<link rel="stylesheet" href="/assets/clippy.css" type="text/css">
+<div class="clippycontainer">
+<style type="text/css">
+@import url("https://rubberocket.com/clippitjs/build/clippy.css");
+</style>
+<script src="https://code.jquery.com/jquery-1.7.0.min.js" type="text/javascript"></script>
+<script src="https://rubberocket.com/clippitjs/build/clippy.js" type="text/javascript"></script>
 <script type="text/javascript">
-clippy.load('Clippy', function(agent){
-    // Do anything with the loaded agent
-    agent.show();
-    agent.speak("It looks like you're visiting Rubberocket. Would you like any help with surfing the net?");
-});
+    clippy.load('Clippy', function(agent){
+        // do anything with the loaded agent
+        agent.show();
+        agent.speak('My name is Clippy.');
+        agent.speak('It looks like you are surfing the net. Would you like help figuring out what a hyperlink is?');
+    });
 </script>
-<script src="https://unpkg.com/clippyjs@latest" type="text/javascript"></script>
 </div>
