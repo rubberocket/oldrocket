@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="250" y2="500" id="gradient-0" gradientTransform="matrix(0.803664, 0, 0, 0.803664, 49.084052, 98.168103)">
+      <stop offset="0" style="stop-color: rgb(61, 53, 92);"/>
+      <stop offset="1" style="stop-color: rgb(85, 85, 124);"/>
+    </linearGradient>
+    <linearGradient x1="23.962%" y1="46.043%" x2="68.784%" y2="55.602%" id="a">
+      <stop stop-color="#919191" offset="0"/>
+      <stop stop-color="#FFF" offset="1"/>
+    </linearGradient>
+    <linearGradient x1="26.427%" y1="42.381%" x2="67.132%" y2="51.906%" id="b">
+      <stop stop-color="#900" offset="0"/>
+      <stop stop-color="#E80000" offset="1"/>
+    </linearGradient>
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 0 0 20 0.88 #ff00004d">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="20"/>
+      <feOffset dx="0" dy="0"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1.76"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#ff00004d"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="inner-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="inner-shadow 1 0 0 20 0.5 #e65555b3">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#e65555b3" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="100.233" cy="523.862" r="165.046" id="gradient-2" gradientTransform="matrix(1.52985, -1.506279, 1.427258, 1.44959, -814.712342, -121.688126)">
+      <stop offset="0" style="stop-color: rgba(127, 112, 203, 0);"/>
+      <stop offset="1" style="stop-color: rgba(63, 56, 88, 0.647);"/>
+    </radialGradient>
+  </defs>
+  <rect width="500" height="500" style="fill: url('#gradient-0');" transform="matrix(1, 0, 0, 1, 0, 1.4210854715202004e-14)"/>
+  <path d="M 170.395 78.138 C 170.106 79.283 170.106 80.43 170.395 81.575 C 170.395 81.575 174.121 105.951 169.819 116.846 L -6.811 576.484 C -19.426 610.318 -2.509 647.879 31.324 660.783 C 65.161 673.683 102.724 657.055 116.2 623.507 L 292.829 163.869 C 296.269 154.978 316.056 137.489 316.056 137.489 C 316.917 136.628 317.777 135.768 318.349 134.91 L 318.349 134.622 C 318.349 134.335 318.635 134.335 318.635 134.046 C 323.223 122.294 293.69 99.929 252.973 84.159 C 212.255 68.386 175.27 65.232 170.681 77.276 C 170.681 77.276 170.395 77.562 170.395 78.138 Z" opacity=".1" style="transform-origin: 154.06px 367.55px;" transform="matrix(0.945812225342, 0.324715077877, -0.324715077877, 0.945812225342, 0.000027317366, 0.000043283724)"/>
+  <path d="M 166.813 72.663 C 166.527 73.811 166.527 74.957 166.813 76.104 C 166.813 76.104 170.543 100.476 166.239 111.371 L -10.389 571.012 C -22.999 604.846 -6.085 642.406 27.752 655.31 C 61.585 668.212 99.147 651.584 112.625 618.037 L 289.253 158.396 C 292.696 149.508 312.479 132.017 312.479 132.017 C 313.342 131.156 314.201 130.297 314.772 129.438 L 314.772 129.151 C 314.772 128.862 315.061 128.862 315.061 128.576 C 319.648 116.819 290.114 94.457 249.396 78.683 C 208.679 62.913 171.689 59.761 167.102 71.804 C 167.102 72.092 167.102 72.378 166.813 72.665 L 166.813 72.663 Z" fill="url(#a)" style="transform-origin: 150.485px 362.078px;" transform="matrix(0.945812225342, 0.324715077877, -0.324715077877, 0.945812225342, 0.000018441129, 0.00004173428)"/>
+  <path d="M 192.311 262.843 L 64.711 594.31 C 55.251 618.11 28.01 630.438 3.638 620.978 C -20.736 611.514 -33.64 583.701 -24.747 559.901 L 56.686 348.003 C 56.686 348.003 66.719 331.657 86.792 319.905 C 106.862 308.146 123.208 310.725 145.286 300.979 C 167.649 291.229 192.311 262.843 192.311 262.843 Z" fill="url(#b)" style="filter: url('#drop-shadow-filter-0') url('#inner-shadow-filter-0'); transform-origin: 82.374px 443.508px;" transform="matrix(0.945812225342, 0.324715077877, -0.324715077877, 0.945812225342, 0.000008317407, 0.000053962929)"/>
+  <path d="M 364.163 161.806 C 366.706 155.175 348.412 141.939 323.305 132.245 C 298.194 122.552 275.78 120.07 273.241 126.701 C 270.698 133.335 288.993 146.567 314.099 156.262 C 339.21 165.955 361.624 168.439 364.163 161.806 Z" fill="#333" style="transform-origin: 318.702px 144.254px;" transform="matrix(0.945812225342, 0.324715077877, -0.324715077877, 0.945812225342, 0.000040046748, 0.000025161699)"/>
+  <path d="M 167.334 56.282 C 167.334 56.282 171.038 80.586 166.763 91.452 L -8.712 549.797 C -21.244 583.533 -4.438 620.991 29.176 633.859 C 34.873 636.145 40.855 637.573 46.837 637.86 C 23.754 620.239 14.857 589.627 24.901 562.375 L 196.96 113.183 C 196.96 113.183 173.316 91.166 167.334 56.282 Z" opacity=".3" fill="#FFF" style="transform-origin: 92.0509px 347.071px;" transform="matrix(0.945812225342, 0.324715077877, -0.324715077877, 0.945812225342, 0.000011627237, 0.000042788509)"/>
+  <g transform="matrix(2.7172770500183105, 0.9328930377960205, -0.9328930377960205, 2.7172770500183105, 63.231868743896484, 334.7602844238282)" fill="#FFF" opacity=".5" style="">
+    <ellipse cx="17.451" cy="2.488" rx="1.785" ry="1.791"/>
+    <ellipse cx="29.052" cy="15.327" rx="2.677" ry="2.687"/>
+    <ellipse cx="11.303" cy="30.653" rx="5.057" ry="5.076"/>
+    <ellipse cx="3.173" cy="40.009" rx="2.677" ry="2.687"/>
+    <ellipse cx="13.782" cy="59.913" rx="1.785" ry="1.791"/>
+  </g>
+  <path d="M 166.813 72.663 C 166.527 73.811 166.527 74.957 166.813 76.104 C 166.813 76.104 170.543 100.476 166.239 111.371 L -10.389 571.012 C -22.999 604.846 -6.085 642.406 27.752 655.31 C 61.585 668.212 99.147 651.584 112.625 618.037 L 289.253 158.396 C 292.696 149.508 312.479 132.017 312.479 132.017 C 313.342 131.156 314.201 130.297 314.772 129.438 L 314.772 129.151 C 314.772 128.862 315.061 128.862 315.061 128.576 C 319.648 116.819 290.114 94.457 249.396 78.683 C 208.679 62.913 171.689 59.761 167.102 71.804 C 167.102 72.092 167.102 72.378 166.813 72.665 L 166.813 72.663 Z" style="fill: url('#gradient-2'); pointer-events: none; transform-origin: 150.485px 362.078px;" transform="matrix(0.945812225342, 0.324715077877, -0.324715077877, 0.945812225342, 0.000040477218, 0.000014182202)"/>
+</svg>
