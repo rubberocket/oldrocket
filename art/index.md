@@ -15,7 +15,7 @@ Sort by category: <a href="./sketches.html">Sketches</a>
 <ul>
   {% for post in site.categories.art %}
     {% if post.url %}
-        <a href="{{post.url}}"><img src="{{post.thumbnail}}" width="100" height="100" alt="{{post.title}}, uploaded on {{ post.date | date: '%-d %B %Y' }}." title="{{post.title}}, uploaded on {{ post.date | date: '%-d %B %Y' }}."></a>
+        <a href="{{post.url}}"><img src="{{post.thumbnailnotseo}}" width="100" height="100" alt="{{post.title}}, uploaded on {{ post.date | date: '%-d %B %Y' }}." title="{{post.title}}, uploaded on {{ post.date | date: '%-d %B %Y' }}."></a>
     {% endif %}
   {% endfor %}
 </ul>
