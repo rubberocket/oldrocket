@@ -9,7 +9,7 @@ category: "art"
 ### This is the section where I list all the art I've made (that I could salvage). If something that was here seems to be missing, it should be located <a href="./old.html">here</a>.
 
 <p>
-Sort by category: <a href="./sketches.html">Sketches</a>
+Sort by category: <a href="./sketches/">Sketches</a>
 </p>
 
 <ul>
