@@ -1,0 +1,21 @@
+---
+layout: default
+title:  "Art!"
+description: "The Rubberocket art gallery. Includes things old and new, so come on down and check it out."
+category: "art"
+---
+
+# Art!
+### This is the section where I list all the art I've made (that I could salvage). If something that was here seems to be missing, it should be located <a href="./old.html">here</a>.
+
+<p>
+Sort by category: <a href="./sketches.html">Sketches</a>
+</p>
+
+<ul>
+  {% for post in site.categories.art %}
+    {% if post.url %}
+        <a href="{{post.url}}"><img src="{{post.thumbnail}}" width="100" height="100" alt="{{post.title}}, uploaded on {{ post.date | date: '%-d %B %Y' }}." title="{{post.title}}, uploaded on {{ post.date | date: '%-d %B %Y' }}."></a>
+    {% endif %}
+  {% endfor %}
+</ul>
