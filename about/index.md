@@ -3,7 +3,6 @@ layout: default
 title: About
 nav_order: 1
 description: "All about Rubberocket.com."
-permalink: /old/about/
 ---
 
 # Rubberocket.com
