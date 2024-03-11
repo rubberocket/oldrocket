@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rubberocket</title>
-<meta property="og:title" content="Rubberocket">
+<title>{{page.title}} :: Rubberocket</title>
+<meta property="og:title" content="{{page.title}} :: Rubberocket">
 <meta property="og:description" content="{{page.description}}">    
 <meta name="description" content="{{page.description}}">
 <meta name="keywords" content="rubberocket, art, animation, flash, videos, images, cartoons, pictures, games, macromedia, game maker, whatever, you, me, whoever i please, stop, what, no, youtube, poop, i'm running out of words">
-<meta name="twitter:title" content="Rubberocket">
+<meta name="twitter:title" content="{{page.title}} :: Rubberocket">
 <meta name="twitter:description" content="{{page.description}}">
 
 </head>
@@ -25,14 +25,14 @@
 	<center>
 	<font color="#FFF" face="Arimo, Arial, Helvetica, sans-serif">
 	<strong>
-	<img src="{{site.baseurl}}/old/assets/images/header/rubberocket.png" width="468" height="60" alt="Rubberocket">
+	<img src="/old/assets/images/header/rubberocket.png" width="468" height="60" alt="Rubberocket">
 	<br>
 	</strong>
 	</font>
 
 	<nav>
 	<font face="Courier New, Courier, monospace">
-	<a href="{{site.baseurl}}/old/">[home]</a>  <a href="{{site.baseurl}}/old/ramble/">[ramble]</a>  <a href="{{site.baseurl}}/old/art/">[art]</a>  <a href="{{site.baseurl}}/old/anim/">[animations]</a>  <a href="{{site.baseurl}}/old/downloads/">[downloads]</a>  <a href="{{site.baseurl}}/old/about/">[about]</a>
+	<a href="/old/">[home]</a>  <a href="/old/ramble/">[ramble]</a>  <a href="/old/art/">[art]</a>  <a href="/old/anim/">[animations]</a>  <a href="/old/downloads/">[downloads]</a>  <a href="/old/about/">[about]</a>
 	</font>
 	</nav>
 	</center>
@@ -54,6 +54,7 @@
 		<td width="30%" valign="top">
 		<!--recent posts-->
 		<font face="Trebuchet MS, Verdana, Arial, Helvetica, sans-serif">
+
 		<aside>
 		<p>
 		<h3>Recent posts</h3>
@@ -64,9 +65,10 @@
               {% endif %}
             {% endfor %}
         </ul>
-        <li><a href="{{site.baseurl}}/old/ramble/">MORE!</a></li>
+        <li><a href="/old/ramble/">MORE!</a></li>
 		</p>
 		</aside>
+
 		</font>
 		<!--end recent posts-->
 		</td>
@@ -93,7 +95,7 @@
 	<td bgcolor="#000">
 	<center>
 	<font face="Trebuchet MS, Verdana, Arial, Helvetica, sans-serif" color="#FFF">
-	<img src="{{site.baseurl}}/old/assets/images/cc/ccbysa.gif" width="88" height="31" alt="Licensed under: CC BY-SA 4.0">
+	<img src="/old/assets/images/cc/ccbysa.gif" width="88" height="31" alt="Licensed under: CC BY-SA 4.0">
 	<br>
 	<small><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Licensed under CC BY-SA.</a></small>
 	</font>
@@ -108,7 +110,7 @@
 	</tbody>
 	</table>
 
-	</footer>
+	</footer>	
 
 
 </body>
